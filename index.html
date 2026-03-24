@@ -301,10 +301,12 @@ function openPopup(type){
 
   // 🎧 PLAY AUDIO
   let audio = document.getElementById("audio-" + type);
-  if(audio){
-    audio.currentTime = 0;
-    audio.play().catch(()=>{});
-  }
+
+if(audio){
+  audio.currentTime = 0;
+  audio.volume = 1; // 🔊 MAKSIMAL
+  audio.play().catch(()=>{});
+}
 }
 
 function closePopup(){
