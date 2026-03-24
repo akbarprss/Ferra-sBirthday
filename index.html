@@ -296,7 +296,7 @@ function openPopup(type){
   // 🎵 TURUNKAN BGM
   let bgm = document.getElementById("bgm");
   if(bgm){
-    fadeVolume(bgm, 0.03, 400);
+    fadeVolume(bgm, 0.01, 400);
   }
 
   // 🎧 PLAY AUDIO
@@ -348,7 +348,7 @@ function fadeVolume(audio, target, duration){
 window.onload = () => {
   let bgm = document.getElementById("bgm");
   if(bgm){
-    bgm.volume = 0.3;
+    bgm.volume = 0.1;
   }
 }
 
